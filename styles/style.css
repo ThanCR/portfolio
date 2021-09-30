@@ -1,0 +1,112 @@
+:root {
+    --heavyPrimary: #0b272e;
+    --darkPrimary: #113D47;
+    --Primary: #284346;
+    --lightPrimary: #A2C4C1;
+    --gray: #E1E8E7;
+    --secondary: #C84557;
+    --mainFont: 'Poppins', sans-serif;
+}
+
+/* global values */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--mainFont);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* navigation menu */
+
+.navBar {
+    height: 100%;
+    max-height: max(100%, 70rem);
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navLink {
+    color: var(--lightPrimary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2rem;
+    border-left: 5px solid var(--secondary);
+    padding: 0 20px;
+    transition: border-left 300ms ease;
+    border-radius: 4px;
+    margin: auto 60px;
+}
+.navLink:hover {
+    border-left: 5px solid var(--lightPrimary);
+}
+@media (max-width: 768px) {
+    .navBar {
+        padding-top: 4rem;
+        flex-direction: column;
+    }
+    .navLink {
+        border-left: none;
+        border-bottom: 5px solid var(--secondary);
+        transition: color 300ms ease;
+        transition: border-bottom 300ms ease;
+    }
+    .navLink:hover {
+        border-left: none;
+        border-bottom: 5px solid var(--lightPrimary);
+        color: var(--gray);
+    }
+}
+
+/* overlay and title*/
+
+.header {
+    width: 100%;
+    max-height: max(100%, 900px);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),  url('/img/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.homeLandscape {
+    text-align: center;
+    margin-top: 15rem;
+    height: 45.8%;
+    color: var(--lightPrimary);
+    padding-bottom: 20rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 5rem;
+    margin-bottom: -10px;
+}
+
+span {
+    font-weight: 400;
+    color: var(--lightPrimary);
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 3rem;
+        font-weight: 500;
+    }   
+    span{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+}
+
