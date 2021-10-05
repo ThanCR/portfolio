@@ -1,9 +1,10 @@
 :root {
-    --heavyPrimary: #0b272e;
-    --darkPrimary: #113D47;
-    --Primary: #284346;
-    --lightPrimary: #A2C4C1;
+    --heavyPrimary: #113D47;
+    --darkPrimary: #284346;
+    --primary: #A2C4C1;
+    --lightPrimary: #66CCCC;
     --gray: #E1E8E7;
+    --white: #FFFFFF;
     --secondary: #C84557;
     --mainFont: 'Poppins', sans-serif;
 }
@@ -31,25 +32,29 @@ h1, h2, h3 {
 .navBar {
     height: 100%;
     max-height: max(100%, 70rem);
-    padding-top: 10rem;
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .navLink {
     color: var(--lightPrimary);
     text-decoration: none;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-left: 5px solid var(--secondary);
-    padding: 0 20px;
-    transition: border-left 300ms ease;
+    padding: 0 30px;
+    transition: border-left 300ms ease, color 300ms ease;
     border-radius: 4px;
-    margin: auto 60px;
+    margin: auto 80px;
 }
+
 .navLink:hover {
-    border-left: 5px solid var(--lightPrimary);
+    border-left: 5px solid var(--primary);
+    color: var(--gray);
 }
+
 @media (max-width: 768px) {
     .navBar {
         padding-top: 4rem;
@@ -64,21 +69,18 @@ h1, h2, h3 {
     .navLink:hover {
         border-left: none;
         border-bottom: 5px solid var(--lightPrimary);
-        color: var(--gray);
     }
 }
 
 /* overlay and title*/
-
 .header {
     width: 100%;
     max-height: max(100%, 900px);
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),  url('/img/cover.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/cover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-
 .homeLandscape {
     text-align: center;
     margin-top: 15rem;
@@ -86,27 +88,130 @@ h1, h2, h3 {
     color: var(--lightPrimary);
     padding-bottom: 20rem;
 }
-
 h1 {
     font-weight: 600;
-    font-size: 5rem;
-    margin-bottom: -10px;
+    font-size: 10rem;
+    margin-bottom: -40px;
 }
-
 span {
     font-weight: 400;
     color: var(--lightPrimary);
     font-size: 4rem;
+    border-top: 6px solid var(--secondary);
+    border-radius: 10px;
+    padding: 0 6rem;
 }
-
 @media (max-width: 768px) {
-    h1{
+    h1 {
         font-size: 3rem;
         font-weight: 500;
-    }   
-    span{
+        margin-bottom: 2rem;
+        line-height: 4rem;
+    }
+    span {
         font-size: 2rem;
         font-weight: 300;
+        padding: 10px 0;
     }
 }
 
+/* Skills section styles */
+body {
+    background-color: var(--white);
+}
+.skills{
+    background-color: var(--lightPrimary);
+    color: var(--white);
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.skills-title{
+    font-size: 4.5rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.skills-border{
+    margin-left: -6rem;
+    height: 80%;
+    width: .5rem;
+    background-color: var(--secondary);
+    border-radius: 4px;
+}
+.skills-list{
+    margin-left: 8%;
+    margin-top: 4rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.skills-list_link{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.skills-list_link div{
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--secondary);
+    border-radius: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.skills-list_link p {
+    margin-top: 0rem;
+    font-weight: 600;
+}
+.htmllogo{
+    background-image: url("/img/HTMLLogo.PNG");
+}
+.csslogo{
+    background-image: url("/img/CSSLogo.PNG");
+}
+.jslogo{
+    background-image: url("/img/JSLogo.png");
+}
+@media (max-width: 768px) {
+    .skills{
+        flex-direction: column;
+        height: 100%;
+    }
+    .skills-title{
+        transform: rotate(0deg);
+        line-height: 7rem;
+        margin-top: 2rem;
+    }
+    .skills-border{
+        /* margin-left: -6rem; */
+        height: .5rem;
+        margin: 0 auto;
+        width: 50%;
+        background-color: var(--secondary);
+        border-radius: 4px;
+        margin-bottom: 3rem;
+    }
+    .skills-list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+.skills-list_link img{
+    height: 100px;
+    width: 100px;
+}
