@@ -35,22 +35,46 @@
             <h2 class="skills-title">Skills</h2>
             <div class="skills-border"></div>
             <ul class="skills-list">
-                <li class="skills-list_link"><img src="img/HTML5Logo.svg" alt="html"> <p>HTML</p></li>
-                <li class="skills-list_link"><img src="img/CSSLogo.svg" alt="css"> <p>CSS</p></li>
-                <li class="skills-list_link"><img src="img/JSLogo.svg" alt="js"><p>JavaScript</p></li>
-                <li class="skills-list_link"><img src="img/GITLogo.svg" alt="git"> <p>GIT</p></li>
-                <li class="skills-list_link"><img src="img/SASSLogo.svg" alt="sass"> <p>SASS</p></li>
-                <li class="skills-list_link"><img src="img/MSSQLLogo.svg" alt="mssql"> <p>MSSQL</p></li>
+                <li class="skills-list_link"><img src="img/HTML5Logo.svg" alt="html">
+                    <p>HTML</p>
+                </li>
+                <li class="skills-list_link"><img src="img/CSSLogo.svg" alt="css">
+                    <p>CSS</p>
+                </li>
+                <li class="skills-list_link"><img src="img/JSLogo.svg" alt="js">
+                    <p>JavaScript</p>
+                </li>
+                <li class="skills-list_link"><img src="img/GITLogo.svg" alt="git">
+                    <p>GIT</p>
+                </li>
+                <li class="skills-list_link"><img src="img/SASSLogo.svg" alt="sass">
+                    <p>SASS</p>
+                </li>
+                <li class="skills-list_link"><img src="img/MSSQLLogo.svg" alt="mssql">
+                    <p>MSSQL</p>
+                </li>
             </ul>
         </section>
 
-        <section>
-            <h2>Proyects</h2>
-            <div>
-                <a href="#">Project</a>
-                <!-- Insert Proyects here!! -->
-            </div>
+        <section class="proyects">
+            <h2 class="proyects-title">Proyects</h2>
+            <div class="title-border"></div>
+            <ul class="proyects-list">
+                <li class="proyects-list_card" onmouseenter="animateCard(this)"
+                onmouseleave="quitAnimation(this)">
+                    <div class="card-image"></div>
+                    <div class="card-text ">
+                        <h3>Lorem</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quam aliquam laudantium quibusdam maiores, cum doloribus deleniti architecto modi velit.
+                        </p>
+                        <div class="card-text-border"></div>
+                        <p>HTML - CSS - JAVASCRIPT</p>
+                    </div>
+                </li>
+            </ul>
         </section>
+
+
         <section>
             <h2>Contact Form</h2>
             <div>
@@ -63,10 +87,13 @@
                 <button>Send</button>
             </div>
         </section>
+
+
         <footer>
             <p>Cartago, Cartago, Costa Rica - 2021</p>
         </footer>
     </main>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
