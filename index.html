@@ -18,12 +18,12 @@
 <body>
     <header class="header">
         <nav class="navBar">
-            <a class="navLink" href="#">Home</a>
-            <a class="navLink" href="#">Skills</a>
-            <a class="navLink" href="#">Proyects</a>
-            <a class="navLink" href="#">Contact</a>
+            <a class="navLink" href="#home">Home</a>
+            <a class="navLink" href="#skills">Skills</a>
+            <a class="navLink" href="#proyects">Proyects</a>
+            <a class="navLink" href="#contact">Contact</a>
         </nav>
-        <section class="homeLandscape">
+        <section id="home" class="homeLandscape">
             <h1>Jonnathan Ríos Gómez</h1>
             <span>Front-End Developer</span>
         </section>
@@ -31,18 +31,18 @@
 
     <main>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2 class="skills-title">Skills</h2>
             <div class="skills-border"></div>
             <ul class="skills-list">
                 <li class="skills-list_link"><img src="img/HTML5Logo.svg" alt="html">
-                    <p>HTML</p>
+                    <a>HTML</a>
                 </li>
                 <li class="skills-list_link"><img src="img/CSSLogo.svg" alt="css">
-                    <p>CSS</p>
+                    <a>CSS</a>
                 </li>
                 <li class="skills-list_link"><img src="img/JSLogo.svg" alt="js">
-                    <p>JavaScript</p>
+                    <a>JavaScript</a>
                 </li>
                 <li class="skills-list_link"><img src="img/GITLogo.svg" alt="git">
                     <p>GIT</p>
@@ -56,16 +56,16 @@
             </ul>
         </section>
 
-        <section class="proyects">
+        <section id="proyects" class="proyects">
             <h2 class="proyects-title">Proyects</h2>
             <div class="title-border"></div>
             <ul class="proyects-list">
-                <li class="proyects-list_card" onmouseenter="animateCard(this)"
-                onmouseleave="quitAnimation(this)">
+                <li class="proyects-list_card" onmouseenter="animateCard(this)" onmouseleave="quitAnimation(this)">
                     <div class="card-image"></div>
                     <div class="card-text ">
                         <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quam aliquam laudantium quibusdam maiores, cum doloribus deleniti architecto modi velit.
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quam aliquam laudantium
+                            quibusdam maiores, cum doloribus deleniti architecto modi velit.
                         </p>
                         <div class="card-text-border"></div>
                         <p>HTML - CSS - JAVASCRIPT</p>
@@ -75,17 +75,18 @@
         </section>
 
 
-        <section>
-            <h2>Contact Form</h2>
-            <div>
-                <label for="name">Name</label>
-                <input type="text" placeholder="Hello World!!" id="name">
-                <label for="email">E-Mail</label>
-                <input type="text" placeholder="helloworld@asd.com" id="email">
-                <label for="message">Message</label>
-                <input type="text" placeholder="Example text!" id="message">
-                <button>Send</button>
-            </div>
+        <section id="contact" class="contact">
+            <form class="form-container">
+                <h2>Contact Form</h2>
+                <div class="form-container_underline"></div>
+                <div class="container">
+                    <input autocomplete="off" class="form-container_input" type="text" placeholder="Name" id="name">
+                    <input autocomplete="off" class="form-container_input" type="text" placeholder="Email" id="email">
+                    <textarea autocomplete="off" class="form-container_input textarea" type="text" placeholder="Message"
+                        id="message"></textarea>
+                    <button type="button">Send</button>
+                </div>
+            </form>
         </section>
 
 
