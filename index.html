@@ -76,15 +76,45 @@
 
 
         <section id="contact" class="contact">
-            <form class="form-container">
+            <form class="form-container"
+                action="https://formsubmit.co/el/dutaxu"
+                method="post"
+            >
                 <h2>Contact Form</h2>
                 <div class="form-container_underline"></div>
                 <div class="container">
-                    <input autocomplete="off" class="form-container_input" type="text" placeholder="Name" id="name">
-                    <input autocomplete="off" class="form-container_input" type="text" placeholder="Email" id="email">
-                    <textarea autocomplete="off" class="form-container_input textarea" type="text" placeholder="Message"
-                        id="message"></textarea>
-                    <button type="button">Send</button>
+                    <input 
+                        autocomplete="off" 
+                        class="form-container_input" 
+                        type="text" 
+                        placeholder="Name" 
+                        id="name"
+                        name="name">
+                    <input 
+                        autocomplete="off" 
+                        class="form-container_input" 
+                        type="email" 
+                        placeholder="Email" 
+                        id="email"
+                        name="email"
+                        >
+                        <input 
+                        autocomplete="off" 
+                        class="form-container_input" 
+                        type="text" 
+                        placeholder="Subject" 
+                        id="subject"
+                        name="subject"
+                        >
+                    <textarea 
+                        autocomplete="off" 
+                        class="form-container_input textarea" 
+                        type="text" 
+                        placeholder="Message"
+                        id="message"
+                        name="message"
+                        ></textarea>
+                    <button type="submit">Send</button>
                 </div>
             </form>
         </section>

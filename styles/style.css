@@ -36,6 +36,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .navLink {
@@ -44,10 +45,11 @@ h1, h2, h3 {
     font-weight: 600;
     font-size: 2.5rem;
     border-left: 5px solid var(--secondary);
-    padding: 0 30px;
+    padding: 0 30px 0 30px;
     transition: border-left 300ms ease, color 300ms ease;
     border-radius: 4px;
-    margin: auto 80px;
+    margin: auto 4rem;
+    text-align: center;
 }
 
 .navLink:hover {
@@ -93,7 +95,7 @@ h1, h2, h3 {
 
 h1 {
     font-weight: 600;
-    font-size: 10rem;
+    font-size: 8rem;
     margin-bottom: -40px;
 }
 
@@ -129,7 +131,7 @@ body {
 .skills {
     background-color: var(--lightPrimary);
     color: var(--white);
-    height: 30rem;
+    height: 35rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -165,6 +167,7 @@ body {
     align-items: center;
     justify-content: space-around;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .skills-list_link {
