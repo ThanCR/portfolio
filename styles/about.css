@@ -1,0 +1,115 @@
+:root {
+    --heavyPrimary: #113D47;
+    --darkPrimary: #284346;
+    --primary: #A2C4C1;
+    --lightPrimary: #66CCCC;
+    --gray: #E1E8E7;
+    --white: #FFFFFF;
+    --secondary: #C84557;
+    --mainFont: 'Poppins', sans-serif;
+}
+
+.content{
+    background-color: var(--lightPrimary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personalInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--heavyPrimary);
+    padding: 3rem;
+    color: var(--gray);
+    border-radius: 40px;
+    width: 80%;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.personalInformation-title{
+    color: var(--gray);
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-size:3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1rem solid;
+    border-radius: 10px;
+    border-color: var(--secondary);
+    width: 20rem;
+    text-align: center;
+    
+}
+
+.personalInformation-item{
+    text-align: justify;
+    line-height: 2.5rem;
+    font-size: 2rem;
+}
+
+.personalInformation-item_span{
+    font-weight: bold;
+    
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: var(--heavyPrimary);
+    color: var(--gray);
+    border-radius: 40px;
+    width: 80%;
+    margin: 4rem 0;
+    
+}
+.experience-title{
+    color: var(--gray);
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-size:3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1rem solid;
+    border-radius: 10px;
+    border-color: var(--secondary);
+    width: 20rem;
+    text-align: center;
+}
+.experience-subtitle{
+    text-align: center;
+    font-size: 2.1rem;
+}
+.experience-item{
+    text-align: justify;
+    line-height: 2.5rem;
+    font-size: 2rem;
+}
+.experience-item_span{
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .content{
+        background-color: var(--heavyPrimary);
+        padding: 2rem;
+    }
+    .experience{
+        width: 100%;
+        margin: 0;
+    }
+    .experience-title{
+        margin: 0;
+        margin-top: 2rem;
+        border: none;
+        color: var(--gray);
+    }
+    .experience-subtitle{
+        color: var(--secondary);
+        letter-spacing: 1px;
+    }
+}
