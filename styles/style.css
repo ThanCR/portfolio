@@ -171,10 +171,15 @@ body {
 }
 
 .skills-list_link {
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    height: 150px;
+    width: 100px;
     flex-direction: column;
+    font-family: var(--mainFont);
+    font-weight: bold;
 }
 
 .skills-list_link div {
