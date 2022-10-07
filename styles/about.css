@@ -98,6 +98,11 @@
         background-color: var(--heavyPrimary);
         padding: 2rem;
     }
+    .personalInformation-title{
+        margin: 0;
+        margin-top: 2rem;
+        color: var(--gray);
+    }
     .experience{
         width: 100%;
         margin: 0;
@@ -105,7 +110,7 @@
     .experience-title{
         margin: 0;
         margin-top: 2rem;
-        border: none;
+        margin-bottom: 2rem;
         color: var(--gray);
     }
     .experience-subtitle{
