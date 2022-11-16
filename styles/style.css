@@ -287,6 +287,9 @@ body {
     border-radius: 3rem;
     overflow: hidden;
 }
+.proyects-list_card:hover {
+    cursor: pointer;
+}
 
 .card-image {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/img/Project1.PNG');
@@ -346,17 +349,9 @@ body {
     border-radius: 10px;
 }
 .card-link{
-    position: relative;
-    top: 1rem;
-    left: 27rem;
+    text-align: right;
     font-size: 5rem;
     color: var(--gray);
-}
-.card-link::after{
-    content: '';
-    background-color: black;
-    height: 10rem;
-    width: 10rem;
 }
 
 @media (max-width: 768px) {
@@ -384,8 +379,9 @@ body {
         border-radius: 3rem;
     }
     .card-text {
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/cover.jpg');
-        background-position: center center;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/Project1.PNG');
+        background-position: top center;
+        background-repeat: no-repeat;
         background-size: cover;
     }
 }
