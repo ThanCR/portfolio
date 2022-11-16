@@ -289,7 +289,7 @@ body {
 }
 
 .card-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/cover.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/img/Project1.PNG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -344,6 +344,19 @@ body {
     height: 5px;
     width: 90%;
     border-radius: 10px;
+}
+.card-link{
+    position: relative;
+    top: 1rem;
+    left: 27rem;
+    font-size: 5rem;
+    color: var(--gray);
+}
+.card-link::after{
+    content: '';
+    background-color: black;
+    height: 10rem;
+    width: 10rem;
 }
 
 @media (max-width: 768px) {
