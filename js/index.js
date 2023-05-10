@@ -14,3 +14,6 @@ const projectList = document.querySelectorAll('ul.proyects-list li')
 projectList[0].addEventListener('click', () =>{
     window.location.href = "https://thanrg-todo-list-project.netlify.app/"
 })
+projectList[1].addEventListener('click', () =>{
+    window.location.href = "https://thanrg-sticker-finder-app.netlify.app/"
+})
