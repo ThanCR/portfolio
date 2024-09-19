@@ -1,0 +1,22 @@
+.NavBar{
+
+}
+.NavBar ul{
+    list-style: none;
+    display: flex;
+    margin: 50px 0px;
+    padding: 0;
+    padding-right: 100px;
+    justify-content: flex-end;
+}
+.navLink{
+    color: white;
+    font-size: 150%;
+    font-weight: 300;
+    margin-right: 50px;
+    transition: color ease 200ms;
+}
+.navLink:hover{
+    color: #3084F2;
+    cursor: pointer;
+}
