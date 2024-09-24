@@ -1,0 +1,25 @@
+.Card{
+    background-color: #211F31;
+    width: 275px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.Card img{
+    padding-top: 30px;
+}
+.Card h3{
+    text-align: start;
+    width: 80%;
+    color: #F2A766;
+    font-size: 20px;
+    font-weight: 500;
+}
+.Card p{
+    width: 80%;
+    font-size: 16px;
+    font-weight: 300;
+}
