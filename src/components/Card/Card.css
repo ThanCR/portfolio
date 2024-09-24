@@ -23,3 +23,19 @@
     font-size: 16px;
     font-weight: 300;
 }
+.center{
+    text-align: center !important;
+    
+}
+.Card .bigger-image{
+    width: 250px;
+    height: 185px;
+}
+.card-hover{
+    cursor: pointer !important;
+}
+.social-media img{
+    width: 140px !important;
+    height: 140px !important;
+    margin-top: 20px;
+}

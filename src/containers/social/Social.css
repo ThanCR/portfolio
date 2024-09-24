@@ -1,0 +1,42 @@
+.Social{
+    width: 90%;
+    margin: 0 auto;
+}
+.Social h2{
+    font-size: 48px;
+    font-weight: 400;
+    color: #F2A766;
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto 100px auto;
+}
+.Social h2::after{
+    content: '';
+    display: inline-block;
+    background-color: #3084F2;
+    width: 80%;
+    height: 5px;
+    margin-left: 40px;
+    transform:translate(0,-200%);
+}
+.Social ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+@media (max-width: 768px){
+    .Social h2{
+        text-align: center;
+    }
+    .Social h2::after{
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+    }
+    .Social ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
