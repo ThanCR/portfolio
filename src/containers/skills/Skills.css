@@ -13,11 +13,11 @@
     max-width: 900px;
     margin: 0 auto 100px auto;
 }
-.Skills h2::after{
+.Skills .skills-title::after{
     content: '';
     display: inline-block;
     background-color: #3084F2;
-    width: 82%;
+    width: 80%;
     height: 5px;
     margin-left: 40px;
     transform:translate(0,-200%);
@@ -35,6 +35,9 @@
 @media (max-width: 1024px){
     .skills-list{
         grid-template-columns: auto;
+    }
+    .Skills .skills-title::after{
+        width: 78%;
     }
 }
 

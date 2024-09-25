@@ -35,7 +35,12 @@
 .project-card:hover{
     cursor: pointer !important;
 }
-
+@media (max-width: 1024px){
+    
+    .Projects h2::after{
+        width: 64%;
+    }
+}
 
 @media (max-width: 768px){
     .Projects h2{

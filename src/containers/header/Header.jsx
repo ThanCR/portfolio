@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import './Header.css';
 
 function Header() {
@@ -5,7 +6,12 @@ function Header() {
     <div className="Header">
       <h1>Jonnathan Ríos</h1>
       <p>Full Stack Developer</p>
-      <button>Continue</button>
+      <Link 
+        activeClass='active' 
+        to='skills'
+        spy={true}
+        smooth={true}
+        duration={500}><button>Continue</button></Link>
     </div>
   );
 }

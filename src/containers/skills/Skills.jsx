@@ -9,11 +9,12 @@ import MSServerLogo from '../../static/mss-logo.svg'
 import MongoLogo from '../../static/mongo-logo.svg'
 import GitLogo from '../../static/git-logo.png'
 import AzureLogo from '../../static/azure-logo.png'
+import { Element } from 'react-scroll';
 
 function Skills() {
   return (
     <div className="Skills">
-      <h2>Skills</h2>
+      <h2 className='skills-title'><Element name='skills'></Element>Skills</h2>
       <section className='skills-list'>
         <Card imageURL={HTMLLogo} title='HTML' description='Proficient in structuring web content using HTML, ensuring semantic, accessible, and responsive page layouts.' />
         <Card imageURL={CSSLogo} title='CSS' description='Skilled in designing responsive and visually appealing web pages with CSS, using Flexbox, Grid, and animations.' />
