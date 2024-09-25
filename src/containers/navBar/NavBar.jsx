@@ -1,12 +1,32 @@
+import { useState } from 'react';
 import './NavBar.css';
 import { Element, Link } from 'react-scroll';
+import { useEffect } from 'react';
 
 function NavBar() {
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(()=>{
+    const handleScroll = () =>{
+      if(window.scrollY > 50){
+        setIsSticky(true)
+      }else{
+        setIsSticky(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return() =>{
+      window.removeEventListener('scroll', handleScroll);
+    };
+
+  }, []);
+
   return (
-    <div className="NavBar">
+    <div className={`NavBar ${isSticky ? 'sticky-nav' : ''}`}>
       <nav>
         <ul>
-          <Element name='home'></Element>
           <li className="navLink"><Link
             activeClass='active'
             to='home'

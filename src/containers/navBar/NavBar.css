@@ -1,12 +1,22 @@
 .NavBar{
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
+    position: sticky;
+    top: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: background-color 100ms ease;
+    z-index: 1000;
+    border-radius: 0 0 20px 20px;
+}
+.sticky-nav{
+    background-color: #3084F2;
 }
 .NavBar ul{
     list-style: none;
     display: flex;
-    margin: 50px 0px;
+    margin: 0;
     padding: 0;
     padding-right: 30px;
     justify-content: flex-end;
@@ -19,11 +29,17 @@
     transition: color ease 200ms;
 }
 .navLink:hover{
-    color: #3084F2;
+    color: #F2A766;
     cursor: pointer;
 }
 
 @media (max-width: 768px) {
+    .NavBar{
+        position: static;
+    }
+    .sticky-nav{
+        background-color: unset;
+    }
     .NavBar ul{
         flex-direction: column;
         align-items: center;
