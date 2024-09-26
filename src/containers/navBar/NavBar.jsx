@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './NavBar.css';
-import { Element, Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { useEffect } from 'react';
 
 function NavBar() {
